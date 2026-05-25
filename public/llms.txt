@@ -1,0 +1,13 @@
+# A-Interiors
+
+> Premium interior design, finishing and renovation specialists in Zimbabwe — kitchens, ceilings, painting, flooring, window treatments and full commercial fit-outs.
+
+## Pages
+
+- [Home](/): Overview of services, ethos, featured projects and contact info.
+- [Projects](/projects): Full portfolio of residential, commercial and clinical interior work.
+
+## Optional
+
+- [Project: Custom Grey Kitchen Build](/projects/kitchen-build-grey)
+- [Project: Corporate Boardroom Fit-Out](/projects/corporate-boardroom)
