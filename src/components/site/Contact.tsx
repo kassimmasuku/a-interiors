@@ -18,11 +18,10 @@ export function Contact() {
 
           <div className="mt-10 space-y-5">
             {[
-              { icon: Phone, t: "Phone", v: "+263 774 738 196", href: "tel:+263774738196" },
-              { icon: Phone, t: "Alternative", v: "+263 785 510 537", href: "tel:+263785510537" },
+              { icon: Phone, t: "Phone", v: "+263 776 692 410", href: "tel:+263776692410" },
               { icon: Mail, t: "Email", v: "info@ainteriors.co.zw", href: "mailto:info@ainteriors.co.zw" },
-              { icon: MessageCircle, t: "WhatsApp", v: "Chat with us instantly", href: "https://wa.me/263774738196" },
-              { icon: MapPin, t: "Location", v: "35 Mcmeekan Road, Milton Park, Harare" },
+              { icon: MessageCircle, t: "WhatsApp", v: "Chat with us instantly", href: "https://wa.me/263776692410" },
+              { icon: MapPin, t: "Location", v: "6 Everret Close, Mount Pleasant, Harare" },
               { icon: Clock, t: "Hours", v: "Mon–Sat · 8:00 AM – 6:00 PM" },
             ].map((c) => {
               const Icon = c.icon;
@@ -44,7 +43,7 @@ export function Contact() {
           <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-soft aspect-[16/9]">
             <iframe
               title="Map"
-              src="https://www.google.com/maps?q=35+Mcmeekan+Road,+Milton+Park,+Harare,+Zimbabwe&output=embed"
+              src="https://www.google.com/maps?q=6+Everret+Close,+Mount+Pleasant,+Harare,+Zimbabwe&output=embed"
               className="w-full h-full border-0"
               loading="lazy"
             />

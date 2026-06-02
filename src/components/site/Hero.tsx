@@ -18,9 +18,6 @@ export function Hero() {
             Transforming <em className="text-gold not-italic font-normal">Spaces</em>
             <br />With Style & Comfort
           </h1>
-          <p className="mt-6 max-w-xl text-base md:text-lg text-white/80 leading-relaxed">
-            Premium interior finishing and renovation specialists delivering elegant spaces tailored to your vision — from concept to handover.
-          </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#contact" className="group inline-flex items-center gap-2 px-7 py-4 rounded-full gradient-gold text-charcoal font-medium shadow-elegant hover:opacity-95 transition">
               Request a Quote
