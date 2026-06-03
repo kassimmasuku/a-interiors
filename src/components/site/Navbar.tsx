@@ -49,7 +49,7 @@ export function Navbar() {
         <Link to="/" className="flex items-center gap-2">
           <img src={logo} alt="A-Interiors logo" width={40} height={40} className="h-10 w-10 rounded-full object-contain" />
           <span className="font-display text-lg md:text-xl font-semibold tracking-tight">
-            The A <span className="text-primary">Interiors</span>
+            A <span className="text-primary">interiors</span>
           </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
