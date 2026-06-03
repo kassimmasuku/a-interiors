@@ -2,6 +2,7 @@ import logo from "@/assets/logo.png";
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
 
 export function Footer() {
+  const mapsHref = "https://maps.app.goo.gl/fuV4voAzM56hbt8S8";
   return (
     <footer className="bg-charcoal text-white/80 pt-20 pb-8">
       <div className="container-prose">
@@ -12,7 +13,7 @@ export function Footer() {
               <span className="font-display text-xl text-white">A-Interiors</span>
             </div>
             <p className="mt-4 text-sm text-white/60 leading-relaxed">
-              MILNECH T/A A-Interiors — premium interior finishing, window styling and renovation specialists transforming residential and commercial spaces across Zimbabwe.
+              A-Interiors — premium interior finishing, window styling and renovation specialists transforming residential and commercial spaces across Zimbabwe.
             </p>
             <div className="mt-5 flex gap-3">
               {[Facebook, Instagram, Linkedin].map((I, i) => (
@@ -41,10 +42,13 @@ export function Footer() {
           <div>
             <h4 className="font-display text-white text-lg">Contact</h4>
             <ul className="mt-4 space-y-3 text-sm">
-              <li className="flex items-center gap-2"><Phone size={14} className="text-gold" /> <a href="tel:+263774738196" className="hover:text-white">+263 774 738 196</a></li>
-              <li className="flex items-center gap-2"><Phone size={14} className="text-gold" /> <a href="tel:+263785510537" className="hover:text-white">+263 785 510 537</a></li>
+              <li className="flex items-center gap-2"><Phone size={14} className="text-gold" /> <a href="tel:+263776692410" className="hover:text-white">+263 776 692 410</a></li>
               <li className="flex items-center gap-2"><Mail size={14} className="text-gold" /> <a href="mailto:info@ainteriors.co.zw" className="hover:text-white">info@ainteriors.co.zw</a></li>
-              <li className="text-white/60">35 Mcmeekan Road, Milton Park, Harare, Zimbabwe</li>
+              <li className="text-white/60">
+                <a href={mapsHref} target="_blank" rel="noreferrer" className="hover:text-white">
+                  6 Everett Cl, Mount Pleasant, Harare, Zimbabwe
+                </a>
+              </li>
               <li className="text-white/60">Mon–Sat · 8 AM – 6 PM</li>
             </ul>
           </div>

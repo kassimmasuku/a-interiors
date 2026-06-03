@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const mapsHref = "https://maps.app.goo.gl/fuV4voAzM56hbt8S8";
   return (
     <section id="contact" className="py-24 md:py-32 bg-secondary/40">
       <div className="container-prose grid lg:grid-cols-2 gap-12">
@@ -18,11 +19,10 @@ export function Contact() {
 
           <div className="mt-10 space-y-5">
             {[
-              { icon: Phone, t: "Phone", v: "+263 774 738 196", href: "tel:+263774738196" },
-              { icon: Phone, t: "Alternative", v: "+263 785 510 537", href: "tel:+263785510537" },
+              { icon: Phone, t: "Phone", v: "+263 776 692 410", href: "tel:+263776692410" },
               { icon: Mail, t: "Email", v: "info@ainteriors.co.zw", href: "mailto:info@ainteriors.co.zw" },
-              { icon: MessageCircle, t: "WhatsApp", v: "Chat with us instantly", href: "https://wa.me/263774738196" },
-              { icon: MapPin, t: "Location", v: "35 Mcmeekan Road, Milton Park, Harare" },
+              { icon: MessageCircle, t: "WhatsApp", v: "Chat with us instantly", href: "https://wa.me/263776692410" },
+              { icon: MapPin, t: "Location", v: "6 Everett Cl, Mount Pleasant, Harare" },
               { icon: Clock, t: "Hours", v: "Mon–Sat · 8:00 AM – 6:00 PM" },
             ].map((c) => {
               const Icon = c.icon;
@@ -37,17 +37,34 @@ export function Contact() {
                   </div>
                 </div>
               );
-              return c.href ? <a key={c.t} href={c.href} className="block">{inner}</a> : <div key={c.t}>{inner}</div>;
+              return c.href ? (
+                <a key={c.t} href={c.href} target="_blank" rel="noreferrer" className="block">
+                  {inner}
+                </a>
+              ) : (
+                <div key={c.t}>{inner}</div>
+              );
             })}
           </div>
 
-          <div className="mt-8 overflow-hidden rounded-2xl border border-border shadow-soft aspect-[16/9]">
-            <iframe
-              title="Map"
-              src="https://www.google.com/maps?q=35+Mcmeekan+Road,+Milton+Park,+Harare,+Zimbabwe&output=embed"
-              className="w-full h-full border-0"
-              loading="lazy"
-            />
+          <div className="mt-8">
+            <div className="overflow-hidden rounded-2xl border border-border shadow-soft aspect-[16/9]">
+              <iframe
+                title="Map"
+                src="https://www.google.com/maps?q=-17.7832316,31.0411116&z=18&output=embed"
+                className="w-full h-full border-0"
+                loading="lazy"
+              />
+            </div>
+            <a
+              href={mapsHref}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-4 inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 rounded-full border border-border bg-card font-medium hover:border-gold/50 hover:shadow-soft transition"
+            >
+              <MapPin size={16} />
+              Open in Google Maps
+            </a>
           </div>
         </Reveal>
 
